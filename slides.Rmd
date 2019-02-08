@@ -85,7 +85,7 @@ Map of the US with distribution of cancer risk.
 
 ---
 # Statistical Model
-$$ \HugeHuge \beta_0 + \beta_1 x $$
+$$ \Huge \beta_0 + \beta_1 x $$
 
 ---
 # Future Directions
