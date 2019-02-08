@@ -1,5 +1,5 @@
 ---
-title: "Application of Geospatial Data to Cancer Risk Prediction"
+title: "Application of Geospatial Data <br/> to Cancer Risk Prediction"
 subtitle: "⚔<br/>made with xaringan"
 author: "Martin Skarzynski"
 date: "`r Sys.Date()`"
@@ -12,18 +12,23 @@ output:
       countIncrementalSlides: false
 ---
 
+<style type="text/css">
+.remark-slide-content {
+    font-size: 28px;
+    padding: 1em 4em 1em 4em;
+}
+</style>
+
+
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 ```
 # About me
 
-- Cancer Prevention Fellow 
-  - at National Cancer Institute
-- Co-Chair, Bioinformatics & Data Science
-  - at Foundation for Advanced Education in the Sciences
+- Cancer Prevention Fellow (NCI)
+- Co-Chair, Bioinformatics & Data Science (FAES)
 - Twitter: [@marskar](https://twitter.com/marskar)
 - Website: https://marskar.github.io
-- Slides: https://marskar.github.io/cpfp_speaker_training/slides
 
 .center[<img src='https://pbs.twimg.com/profile_images/1031975007214346245/vp0tsDy5_400x400.jpg' width='300px'></img>]
 
@@ -41,7 +46,7 @@ options(htmltools.dir.version = FALSE)
 ---
 # Data Collection methods
 - Active
-    - e.g. Trials and Observational Studies
+    - e.g. Observational Studies
     - Expensive
 - Passive
     - e.g. Cancer registry
@@ -53,18 +58,45 @@ options(htmltools.dir.version = FALSE)
 How can we leverage cancer registry data to improve cancer risk prediction methods?
 
 ---
+# Main Data Source
+
+- North American Association of Central Cancer Registries (NAACCR)
+- Cancer in North American (CiNA) dataset
+- State- and county-level cancer incidence and mortality data
+
+---
 # Money slide
 
 Map of the US with distribution of cancer risk.
+![](https://mgimond.github.io/ES218/Week12a_files/figure-html/unnamed-chunk-32-1.png)
 
 ---
-# Acknowledgement
-
-
+# Statistical Model
+$$ y = \beta_0 + \beta_1 x $$
 
 ---
 # Future Directions
 
+Cancer focused:
+- Surveillance, Epidemiology, and End Results
+- United States Cancer Statistics (CDC)
+
+Other data sources:
+- American Community Survey (Census)
+- USDA Economic Research Service
+- Environmental Quality Index (EQI)*
+
+*Jagai et al. (2017) Cancer, 123: 2901-2908.
+
+---
+# Acknowledgement
+
+- Hormuzd Katki, PhD (preceptor)
+- Christine Berg, MD
+- Anil Chaturvedi, PhD
+- Paul Pinsky, PhD
+- Ronald M. Summers, MD, PhD
+- Li Cheung, PhD
 
 ---
 
