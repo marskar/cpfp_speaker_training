@@ -18,7 +18,7 @@ output:
     padding: 1em 4em 1em 4em;
 }
 .large { font-size: 130% }
-.title-slide .remark-slide-number {
+.remark-slide-number {
   display: none;
 }
 </style>
