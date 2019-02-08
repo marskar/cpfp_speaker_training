@@ -17,6 +17,7 @@ output:
     font-size: 28px;
     padding: 1em 4em 1em 4em;
 }
+.large { font-size: 130% }
 </style>
 
 
@@ -52,10 +53,18 @@ options(htmltools.dir.version = FALSE)
     - e.g. Cancer registry
     - More 💥 for our 💰
 
+Common challenges:
+- Data access
+- Combining data from various sources
+- Integrating data into risk predition models
+
 ---
 # Main question
 
-How can we leverage cancer registry data to improve cancer risk prediction methods?
+.large[How can we leverage cancer registry data to improve cancer risk prediction methods?]
+
+![](https://20tqtx36s1la18rvn82wcmpn-wpengine.netdna-ssl.com/wp-content/uploads/2018/04/vpr-2.png)
+
 
 ---
 # Main Data Source
@@ -63,6 +72,8 @@ How can we leverage cancer registry data to improve cancer risk prediction metho
 - North American Association of Central Cancer Registries (NAACCR)
 - Cancer in North American (CiNA) dataset
 - State- and county-level cancer incidence and mortality data
+
+![](https://20tqtx36s1la18rvn82wcmpn-wpengine.netdna-ssl.com/wp-content/uploads/2016/10/naaccr-logo-1.png)
 
 ---
 # Money slide
@@ -72,19 +83,20 @@ Map of the US with distribution of cancer risk.
 
 ---
 # Statistical Model
-$$ y = \beta_0 + \beta_1 x $$
+$$ \Huge y = \beta_0 + \beta_1 x $$
 
 ---
 # Future Directions
 
-Cancer focused:
-- Surveillance, Epidemiology, and End Results
-- United States Cancer Statistics (CDC)
-
-Other data sources:
-- American Community Survey (Census)
-- USDA Economic Research Service
-- Environmental Quality Index (EQI)*
+Incorporate additional datasets:
+- Cancer-focused:
+    - Surveillance, Epidemiology, and End Results
+    - United States Cancer Statistics (CDC)
+- Socioeconomic-focused:
+    - American Community Survey (Census)
+    - USDA Economic Research Service
+- Exposure-focused:
+    - Environmental Quality Index (EQI)*
 
 *Jagai et al. (2017) Cancer, 123: 2901-2908.
 
@@ -104,4 +116,4 @@ class: center, middle
 
 # Thanks for listening!
 
-Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan), [**remark.js**](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), and [**R Markdown**](https://rmarkdown.rstudio.com).
+[**remark.js**](https://remarkjs.com) slides written in [**R Markdown**](https://rmarkdown.rstudio.com) and built via the [**xaringan**](https://github.com/yihui/xaringan) and [**knitr**](http://yihui.name/knitr) R packages.
