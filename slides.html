@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Application of Geospatial Data to Cancer Risk Prediction</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Martin Skarzynski" />
+    <meta name="date" content="2019-02-08" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Application of Geospatial Data to Cancer Risk Prediction
+## ⚔<br/>made with xaringan
+### Martin Skarzynski
+### 2019-02-08
+
+---
+
+
+
+# About me
+
+- Cancer Prevention Fellow 
+  - at National Cancer Institute
+- Co-Chair, Bioinformatics &amp; Data Science
+  - at Foundation for Advanced Education in the Sciences
+- Twitter: [@marskar](https://twitter.com/marskar)
+- Website: https://marskar.github.io
+- Slides: https://marskar.github.io/cpfp_speaker_training/slides
+
+.center[&lt;img src='https://pbs.twimg.com/profile_images/1031975007214346245/vp0tsDy5_400x400.jpg' width='300px'&gt;&lt;/img&gt;]
+
+---
+
+# Cancer Research
+- So many questions
+- So little time (and money)
+- Prevention research can have tremendous impact
+    - Catch cancer early
+    - Before it becomes entrenched
+    - More 💥 for our 💰
+
+
+---
+# Data Collection methods
+- Active
+    - e.g. Trials and Observational Studies
+    - Expensive
+- Passive
+    - e.g. Cancer registry
+    - More 💥 for our 💰
+
+---
+# Main question
+
+How can we leverage cancer registry data to improve cancer risk prediction methods?
+
+---
+# Money slide
+
+Map of the US with distribution of cancer risk.
+
+---
+# Acknowledgement
+
+
+
+---
+# Future Directions
+
+
+---
+
+class: center, middle
+
+# Thanks for listening!
+
+Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan), [**remark.js**](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), and [**R Markdown**](https://rmarkdown.rstudio.com).
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script>
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+})();
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

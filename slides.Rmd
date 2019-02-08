@@ -1,0 +1,75 @@
+---
+title: "Application of Geospatial Data to Cancer Risk Prediction"
+subtitle: "⚔<br/>made with xaringan"
+author: "Martin Skarzynski"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+# About me
+
+- Cancer Prevention Fellow 
+  - at National Cancer Institute
+- Co-Chair, Bioinformatics & Data Science
+  - at Foundation for Advanced Education in the Sciences
+- Twitter: [@marskar](https://twitter.com/marskar)
+- Website: https://marskar.github.io
+- Slides: https://marskar.github.io/cpfp_speaker_training/slides
+
+.center[<img src='https://pbs.twimg.com/profile_images/1031975007214346245/vp0tsDy5_400x400.jpg' width='300px'></img>]
+
+---
+
+# Cancer Research
+- So many questions
+- So little time (and money)
+- Prevention research can have tremendous impact
+    - Catch cancer early
+    - Before it becomes entrenched
+    - More 💥 for our 💰
+
+
+---
+# Data Collection methods
+- Active
+    - e.g. Trials and Observational Studies
+    - Expensive
+- Passive
+    - e.g. Cancer registry
+    - More 💥 for our 💰
+
+---
+# Main question
+
+How can we leverage cancer registry data to improve cancer risk prediction methods?
+
+---
+# Money slide
+
+Map of the US with distribution of cancer risk.
+
+---
+# Acknowledgement
+
+
+
+---
+# Future Directions
+
+
+---
+
+class: center, middle
+
+# Thanks for listening!
+
+Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan), [**remark.js**](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), and [**R Markdown**](https://rmarkdown.rstudio.com).
