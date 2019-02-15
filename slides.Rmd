@@ -1,5 +1,5 @@
 ---
-title: "Application of Geospatial Data <br/> to Cancer Risk Prediction"
+title: "Application of Registry Data <br/> to Cancer Risk Prediction"
 subtitle: "⚔<br/>made with xaringan"
 author: "Martin Skarzynski"
 date: "`r Sys.Date()`"
@@ -10,6 +10,7 @@ output:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
+      ratio: '16:9'
 ---
 
 <style type="text/css">
@@ -18,6 +19,7 @@ output:
     padding: 1em 4em 1em 4em;
 }
 .large { font-size: 130% }
+.small { font-size: 60% }
 .remark-slide-number {
   display: none;
 }
@@ -27,16 +29,7 @@ output:
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 ```
-# About me
 
-- Cancer Prevention Fellow (NCI)
-- Co-Chair, Bioinformatics & Data Science (FAES)
-- Twitter: [@marskar](https://twitter.com/marskar)
-- Website: https://marskar.github.io
-
-.center[<img src='https://pbs.twimg.com/profile_images/1031975007214346245/vp0tsDy5_400x400.jpg' width='300px'></img>]
-
----
 
 # Cancer Research
 - So many questions
@@ -62,6 +55,18 @@ Common challenges:
 - Integrating data into risk predition models
 
 ---
+# Cancer risk is not distributed uniformly
+.center[<img src='https://www.cancer.gov/PublishedContent/Images/images/graphs/JAMA-mortality-trends-by-US-county.__v800529489.jpg' width='600px'></img>]
+
+---
+# Risk depends on cancer type (liver)
+.center[<img src='https://cdn.cnn.com/cnnnext/dam/assets/170124123929-09-cancer-cluster-maps--super-169.jpg' width='900px'></img>]
+
+---
+# Risk depends on gender (males)
+.center[<img src='https://cdn.cnn.com/cnnnext/dam/assets/170124123819-05-cancer-cluster-maps--super-169.jpg' width='900px'></img>]
+
+---
 # Main question
 
 .large[How can we leverage cancer registry data to improve cancer risk prediction methods?]
@@ -70,40 +75,62 @@ Common challenges:
 
 
 ---
-# Main Data Source
+# Cancer-focused Data Sources
 
 ![](https://20tqtx36s1la18rvn82wcmpn-wpengine.netdna-ssl.com/wp-content/uploads/2016/10/naaccr-logo-1.png)
+
 - Cancer in North American (CiNA) dataset
-- State- and county-level cancer incidence and mortality data
+- Surveillance, Epidemiology, and End Results (SEER)
+- United States Cancer Statistics (CDC)
 
-
----
-# Money slide
-
-Map of the US with distribution of cancer risk.
-![](https://mgimond.github.io/ES218/Week12a_files/figure-html/unnamed-chunk-32-1.png)
+.pull-left[<img src='https://pbs.twimg.com/media/Di-AQ3JU8AABqEC.png' width='200px'></img>]
+.pull-left[<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/US_CDC_logo.svg/1200px-US_CDC_logo.svg.png' width='200px'></img>]
 
 ---
-# Statistical Model
-$$ \Huge \beta_0 + \beta_1 x $$
+# Socioeconomic and Environmental Data Sources
 
----
-# Future Directions
-
-Incorporate additional datasets:
-- Cancer-focused:
-    - Surveillance, Epidemiology, and End Results
-    - United States Cancer Statistics (CDC)
-- Socioeconomic-focused:
-    - American Community Survey (Census)
-    - USDA Economic Research Service
-- Exposure-focused:
-    - Environmental Quality Index (EQI)*
+- US Census Bureau American Community Survey (ACS)
+- USDA Economic Research Service
+- Environmental Quality Index (EQI)*
 
 *Jagai et al. (2017) Cancer, 123: 2901-2908.
 
+
 ---
-# Acknowledgement
+# Statistical Models
+1. Bach Model
+  - .small[Bach et al., (2003) Variations in lung cancer risk among smokers.JNCI 95: 470-478]
+1. Prostate, Lung, Colorectal, and Ovarian Cancer Screening Trial Model 2012 (PLCOM2012)
+  - .small[Tammemägi et al., (2013) Selection criteria for lung-cancer screening. NEJM 368:728-736]
+1. Lung Cancer Risk Assessment Tool (LCRAT)
+  - .small[Katki et al., (2016) Development and validation of risk models to select ever-smokers for CT lung cancer screening. JAMA 315:2300-2311]
+
+
+---
+# Statistical Models
+Lung Cancer Risk Assessment Tool (LCRAT)
+
+$$ r(x)={r_0(x)}^{β_0+CTemp*β_1} $$
+- $r(x)$ : future risk of lung cancer
+- $r_0(x)$ : pre-screening risk
+- $x$ : risk factors in LCRAT
+- $CTemp=1$ if emphysema was detected 
+- $CTemp=0$ if not
+---
+# Future Directions
+
+- Determine how socioeconomic factors interact with cancer risk
+
+- Create combined lung risk calculator
+  - that includes emphysema and other image-detected features
+  - and air quality data
+  - to calculate lung cancer risk
+  - for individuals that have undergone chest CT screening
+  
+- Calculate how the impact of screening (life years gained) varies geographically
+
+---
+# Acknowledgements
 
 - Hormuzd Katki, PhD (preceptor)
 - Christine Berg, MD
