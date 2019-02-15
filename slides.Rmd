@@ -108,7 +108,7 @@ Common challenges:
 
 ---
 # Statistical Models
-Lung Cancer Risk Assessment Tool (LCRAT)
+Lung Cancer Risk Assessment Tool plus Computed Tomography (LCRAT+CT)
 
 $$ r(x)={r_0(x)}^{β_0+CTemp*β_1} $$
 - $r(x)$ : future risk of lung cancer
@@ -122,8 +122,7 @@ $$ r(x)={r_0(x)}^{β_0+CTemp*β_1} $$
 - Determine how socioeconomic factors interact with cancer risk
 
 - Create combined lung risk calculator
-  - that includes emphysema and other image-detected features
-  - and air quality data
+  - that image-detected features and air quality data
   - to calculate lung cancer risk
   - for individuals that have undergone chest CT screening
   
